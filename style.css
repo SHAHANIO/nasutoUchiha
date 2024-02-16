@@ -1,0 +1,112 @@
+:root{
+    --main-color: #e1410c;
+    --bg-color: #ffffff;
+    --second-bg-color: #efefef;
+    --text-color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 1000;
+}
+
+.logo h3{
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.logo h3 span{
+    color: var(--main-color);
+}
+
+.navbar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.navbar .member{
+    color: var(--bg-color);
+    background: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+.navbar .member:hover{
+    color: var(--bg-color);
+    box-shadow: none;
+    /* box-shadow: 0 0 10px var(--main-color); */
+}
+
+.navbar .member:active{
+    transform: scale(0.8);
+}
+
+#home{
+    background: url(/img/bg2.jpg);
+    height: 100vh;
+    /* height: 28.45cm; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#home .text-box{
+    /* padding: 300px 20%; */
+    margin: 0  0 0 15%;
+}
+
+#home .text-box h1{
+    color: var(--text-color);
+    font-size: 120px;
+    font-family: maiandra gd;
+}
+
+#home .text-box h1 span{
+    color: var(--main-color);
+    font-size: 200px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: chiller;
+    text-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+}
+
+#home img{
+    width: 500px;
+    /* margin-right: 1000px; */
+    margin: 0 15% 0 0;
+}
